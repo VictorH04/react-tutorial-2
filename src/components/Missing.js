@@ -1,9 +1,15 @@
-const Missing = () => {
-    return (
-        <main>
-            <h1>Missing 404</h1>
-        </main>
-    )
-}
+import { Link } from "react-router-dom";
 
-export default Missing
+const Missing = () => {
+  return (
+    <main className="Missing">
+      <h2>Page Not Found - 404</h2>
+      <p>Well, that's disappointing.</p>
+      <p>
+        <Link to="/">Back to homepage.</Link>
+      </p>
+    </main>
+  );
+};
+
+export default Missing;
